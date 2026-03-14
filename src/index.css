@@ -109,3 +109,176 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+/* ── WhisperTest ── */
+.whisper-root {
+  width: 100%;
+  max-width: 760px;
+  margin: 48px auto;
+  padding: 0 24px 64px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.whisper-header {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.whisper-title {
+  font-size: 40px;
+  letter-spacing: -1px;
+  margin: 0 0 8px;
+  color: var(--text-h);
+}
+
+.whisper-subtitle {
+  color: var(--text);
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Drop zone */
+.whisper-dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 36px 24px;
+  box-sizing: border-box;
+  border: 2px dashed var(--border);
+  border-radius: 12px;
+  background: var(--code-bg);
+  cursor: pointer;
+  font-size: 15px;
+  color: var(--text);
+  transition: border-color 0.2s, background 0.2s;
+  text-align: center;
+}
+.whisper-dropzone:hover {
+  border-color: var(--accent-border);
+  background: var(--accent-bg);
+}
+.whisper-dropzone--busy {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.whisper-dropzone-icon {
+  font-size: 32px;
+  line-height: 1;
+}
+
+/* Progress */
+.whisper-progress-wrap {
+  margin-top: 20px;
+}
+.whisper-progress-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--text);
+  margin-bottom: 6px;
+  font-family: var(--mono);
+}
+.whisper-progress-track {
+  width: 100%;
+  height: 6px;
+  background: var(--border);
+  border-radius: 99px;
+  overflow: hidden;
+}
+.whisper-progress-bar {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 99px;
+  transition: width 0.3s ease;
+}
+
+/* Transcript */
+.whisper-transcript {
+  margin-top: 28px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.whisper-transcript-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: var(--code-bg);
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-h);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.whisper-copy-btn {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--accent-border);
+  background: var(--accent-bg);
+  color: var(--accent);
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.15s;
+}
+.whisper-copy-btn:hover {
+  background: var(--accent);
+  color: #fff;
+}
+.whisper-segments {
+  max-height: 420px;
+  overflow-y: auto;
+  padding: 8px 0;
+}
+.whisper-segment {
+  display: flex;
+  gap: 14px;
+  align-items: baseline;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border);
+  line-height: 1.5;
+  transition: background 0.1s;
+}
+.whisper-segment:last-of-type {
+  border-bottom: none;
+}
+.whisper-segment:hover {
+  background: var(--code-bg);
+}
+.whisper-timestamp {
+  flex-shrink: 0;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--accent);
+  min-width: 38px;
+}
+.whisper-text {
+  font-size: 15px;
+  color: var(--text-h);
+}
+
+/* Error */
+.whisper-error {
+  margin-top: 20px;
+  padding: 14px 16px;
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 8px;
+  font-size: 14px;
+  color: #ef4444;
+  font-family: var(--mono);
+}
+
+/* Hint */
+.whisper-hint {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--text);
+}
