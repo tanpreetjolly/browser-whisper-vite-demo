@@ -66,7 +66,7 @@ See the project structure below — the hook owns all library calls, the compone
 | `whisper-tiny` | ~30 MB | Fastest | Good for clear speech |
 | `whisper-base` | ~70 MB | Fast | Better accuracy |
 | `whisper-small` | ~240 MB | Moderate | High accuracy |
-| `whisper-large` | ~1.5 GB | Slow | Best accuracy |
+| `whisper-large-v3-turbo` | ~2.7 GB | Slow | Best accuracy |
 
 Pass the model name to the constructor:
 

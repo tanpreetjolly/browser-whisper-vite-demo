@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "browser-whisper": "^0.8.0",
+    "browser-whisper": "^1.1.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4"
   },
